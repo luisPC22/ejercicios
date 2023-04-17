@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - ADIVINAR EL NUMERO</h1>
+
+<script>
+
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos) {
+        var numero = parseInt(prompt("Ingrese un numero del 1 al 10"));
+
+        var numeroRandom = Math.round(Math.random() * 10);
+
+        if (numero == numeroRandom) {
+            alert("Felicidades adivinaste el numero");
+            break;
+        } else {
+            alert("Mala Suerte, el numero era: " + numeroRandom)
+        }
+
+        contador++;
+
+    }
+
+</script>
